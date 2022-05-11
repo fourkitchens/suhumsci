@@ -1,0 +1,10 @@
+- name: Sparkbox Sandbox Homepage
+  url: http://sparkbox-sandbox.suhumsci.loc/
+- name: QA Page
+  url: http://sparkbox-sandbox.suhumsci.loc/qa/qa-page
+- name: QA Views
+  url: http://sparkbox-sandbox.suhumsci.loc/qa-views
+- name: QA Publications
+  url: http://sparkbox-sandbox.suhumsci.loc/publications/qa-publications-all-fields-filled
+- name: QA Events
+  url: http://sparkbox-sandbox.suhumsci.loc/events/1st-year-economics-graduate-student-seminar-series/qa-events-all-fields-filled
