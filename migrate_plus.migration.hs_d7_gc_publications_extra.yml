@@ -2,7 +2,7 @@ uuid: a0028efb-6eff-4821-9fae-b9a7776a47b0
 langcode: en
 status: true
 dependencies: {  }
-id: hs_d7_publications_gc_extra
+id: hs_d7_gc_publications_extra
 migration_group: hs_d7_content
 label: 'D7 Publications Global Currents Fields'
 source:
