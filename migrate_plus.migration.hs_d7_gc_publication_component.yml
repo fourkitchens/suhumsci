@@ -74,15 +74,7 @@ source:
   ids:
     guid:
       type: string
-  orphan_action: forget
 process:
-  revision_translation_affected:
-    -
-      plugin: default_value
-      default_value: 1
-  revision_timestamp:
-    plugin: callback
-    callable: _stanford_migrate_get_time
   type: constants/type
   title: title
   body/value: body
@@ -121,6 +113,12 @@ process:
       plugin: str_replace
       search: '<p><em></em></p>'
       replace: ''
+  image_title:
+    -
+      plugin: concat
+      source:
+        - title
+        - guid
   image_file:
     -
       plugin: skip_on_empty
@@ -142,7 +140,7 @@ process:
       source: '@image_file'
     -
       plugin: entity_generate
-      source: title
+      source: '@image_title'
       value_key: name
       bundle_key: bundle
       bundle: image
@@ -176,26 +174,7 @@ process:
       migration: hs_d7_publications
       source: pubReferenceGuid
 destination:
-  plugin: 'entity_reference_revisions:node'
-  new_revisions: true
-  force_revision: true
-  overwrite_properties:
-    - title
-    - body/format
-    - body/value
-    - custm_pubcomp_viselt
-    - custm_pubcomp_feat_img/target_id
-    - image_caption
-    - image_caption_credits
-    - image_credits
-    - image_file
-    - custm_pubcomp_lang
-    - custm_pubcomp_link/title
-    - custm_pubcomp_link/uri
-    - custm_pubcomp_feature
-    - custm_pubcomp_ref
-    - revision_timestamp
-    - revision_translation_affected
+  plugin: 'entity:node'
 migration_dependencies:
   required:
     - hs_d7_publications
