@@ -19,7 +19,7 @@ source:
     minimal_html: minimal_html
     credit_prefix: '<p><em>'
     credit_suffix: '</em></p>'
-    image_destination: 'public://media/image/publication_component/'
+    image_destination: 'public://media/image/'
     alt: ''
   item_selector: /componentList/component
   fields:
@@ -113,12 +113,6 @@ process:
       plugin: str_replace
       search: '<p><em></em></p>'
       replace: ''
-  image_title:
-    -
-      plugin: concat
-      source:
-        - title
-        - guid
   image_file:
     -
       plugin: skip_on_empty
@@ -129,18 +123,18 @@ process:
       destination: constants/image_destination
       id_only: true
       reuse: true
-  custm_pubcomp_feat_img/target_id:
+  custm_pubcomp_feat_img:
     -
       plugin: skip_on_empty
       method: process
-      source: image
+      source: featuredImage
     -
       plugin: skip_on_empty
       method: process
       source: '@image_file'
     -
       plugin: entity_generate
-      source: '@image_title'
+      source: title
       value_key: name
       bundle_key: bundle
       bundle: image
