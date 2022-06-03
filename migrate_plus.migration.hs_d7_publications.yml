@@ -219,7 +219,7 @@ process:
       source: locality
     -
       plugin: explode
-      delimiter: ', '
+      delimiter: '| '
     -
       plugin: entity_generate
       value_key: name
@@ -233,7 +233,7 @@ process:
       source: pubDate
     -
       plugin: explode
-      delimiter: ', '
+      delimiter: '| '
     -
       plugin: entity_generate
       value_key: name

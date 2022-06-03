@@ -86,7 +86,7 @@ process:
       source: componentType
     -
       plugin: explode
-      delimiter: ', '
+      delimiter: '| '
     -
       plugin: entity_generate
       value_key: name
@@ -152,7 +152,7 @@ process:
       source: language
     -
       plugin: explode
-      delimiter: ', '
+      delimiter: '| '
     -
       plugin: entity_generate
       value_key: name
