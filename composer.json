@@ -130,6 +130,7 @@
         "drupal/addtocal": "^2.0",
         "drupal/admin_login_path": "^2.0",
         "drupal/admin_toolbar": "^3.0",
+        "drupal/advagg": "^6.0@alpha",
         "drupal/allowed_formats": "^2.0",
         "drupal/anchor_link": "^2.4",
         "drupal/asset_injector": "^2.7",
