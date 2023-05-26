@@ -10,6 +10,7 @@ folder: ../config/envs/prod
 module:
   acquia_connector: 0
   acquia_purge: 0
+  addvagg: 0
   config_readonly: 0
   google_analytics: 0
   hs_config_readonly: 0

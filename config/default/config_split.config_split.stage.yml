@@ -10,6 +10,7 @@ folder: ../config/envs/stage
 module:
   acquia_connector: 0
   acquia_purge: 0
+  addvagg: 0
   dblog: 0
   memcache: 0
   memcache_admin: 0
