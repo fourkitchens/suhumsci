@@ -10,7 +10,12 @@ folder: ../config/envs/dev
 module:
   acquia_connector: 0
   acquia_purge: 0
-  addvagg: 0
+  advagg: 0
+  advagg_bundler: 0
+  advagg_css_minify: 0
+  advagg_js_minify: 0
+  advagg_mod: 0
+  advagg_validator: 0
   memcache: 0
   memcache_admin: 0
   nobots: 0
