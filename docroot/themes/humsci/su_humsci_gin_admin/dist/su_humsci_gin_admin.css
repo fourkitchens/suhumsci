@@ -38,3 +38,8 @@ html:not(.gin--dark-mode) .user-logged-in[data-gin-accent="custom"] {
 .linkit-result-line--title, .linkit-result-line--description {
   white-space: normal !important;
 }
+
+/* Paragraphs Browser */
+.paragraphs-browser-wrapper fieldset:not(.fieldgroup) {
+  margin-bottom: 48px;
+}
